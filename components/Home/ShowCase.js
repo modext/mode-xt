@@ -2,11 +2,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import { useEffect, useRef } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ShowcaseRoot } from '../styles/ShowcaseRoot';
 import LinksElem from './LinksElem';
+import linksData from '../linksfile.json'; 
 
 function ShowCase({
   item: {
@@ -20,7 +19,6 @@ function ShowCase({
     designTech,
     length,
     platform = 'web',
-    links,
     poster,
   },
 }) {
@@ -91,6 +89,8 @@ function ShowCase({
       });
   }, []);
 
+  const itemLinks = linksData[index] || [];
+
   return (
     <ShowcaseRoot ref={root}>
       <div className={`root__num root__num--${index}`}>
@@ -100,7 +100,7 @@ function ShowCase({
         <a
           rel='noreferrer'
           target={platform === 'mobile' ? '_self' : '_blank'}
-          href={platform === 'mobile' ? '#' : links[0].link}
+          href={platform === 'mobile' ? '#' : itemLinks[0]?.link}
         >
           <h1 className={`title-head__outer root__hidden`}>
             {title.split('').map((i, k) => {
@@ -188,10 +188,10 @@ function ShowCase({
               );
             })}
           </div>
-        </div>{' '}
+        </div>
         <div className={`root__wrapper root__wrapper--${index}`}>
           <div className='root__heading root__heading--1'>Links :</div>
-          <LinksElem links={links} title={title}></LinksElem>
+          <LinksElem links={itemLinks} title={title}></LinksElem>
         </div>
       </div>
     </ShowcaseRoot>

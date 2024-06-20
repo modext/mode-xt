@@ -18,6 +18,12 @@ function Slider() {
     'GSAP',
     'FIREBASE',
     'ADOBE XD',
+    'PYTHON',
+    'TYPESCRIPT',
+    'WORDPRESS',
+    'GCP',
+    'BLOCKCHAIN',
+    'MATERIAL UI',
     'EXPRESS JS',
   ]).current;
   return (
