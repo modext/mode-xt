@@ -191,6 +191,7 @@ function ShowCase({
         </div>
         <div className={`root__wrapper root__wrapper--${index}`}>
           <div className='root__heading root__heading--1'>Links :</div>
+        
           <LinksElem links={itemLinks} title={title}></LinksElem>
         </div>
       </div>
