@@ -11,7 +11,7 @@ function Slider() {
     ],
     'Backend Development': [
       'Node.js', 'Express JS', 'NestJS', 'REST APIs', 'tRPC',
-      'MongoDB', 'PostgreSQL', 'Go (Golang)', 'Laravel'
+      'MongoDB', 'PostgreSQL', 'Go (Golang)', 'Laravel', 'MySQL'
     ],
     'Blockchain & Web3': [
       'Solidity', 'Hardhat', 'Ethers.js', 'Web3.js', 'Chainlink',
