@@ -11,7 +11,7 @@ function Slider() {
     ],
     'Backend Development': [
       'Node.js', 'Express JS', 'NestJS', 'REST APIs', 'tRPC',
-      'MongoDB', 'PostgreSQL', 'Go (Golang)'
+      'MongoDB', 'PostgreSQL', 'Go (Golang)', 'Laravel'
     ],
     'Blockchain & Web3': [
       'Solidity', 'Hardhat', 'Ethers.js', 'Web3.js', 'Chainlink',
@@ -24,7 +24,7 @@ function Slider() {
       'Jest', 'Hardhat', 'Chai', 'Supertest'
     ],
     'Other': [
-      'Python'
+      'Python', 'GrapesJs'
     ]
   }).current;
   
