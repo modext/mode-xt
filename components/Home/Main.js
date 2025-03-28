@@ -19,6 +19,9 @@ function Main({ projects: data }) {
     <>
       {innerWidth < 768 ? null : <Cursor reference={headerRef}></Cursor>}
       <Hero ref={headerRef}></Hero>
+
+      
+      <Slider></Slider>
       <div className='root-container'>
         {data.map((item, idx) => {
           return (
@@ -29,7 +32,7 @@ function Main({ projects: data }) {
           );
         })}
       </div>
-      <Slider></Slider>
+      
       <Footer></Footer>
     </>
   );

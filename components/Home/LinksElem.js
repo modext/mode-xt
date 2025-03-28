@@ -9,12 +9,11 @@ function LinksElem({ links, title }) {
         return (
           <>
             <div key={idx} className='root__heading root__heading--2'>
-              <img alt='' src={elem.icons} />
-              <Link passHref href={`${elem.link}`}>
-                <a target='_blank' rel='noreferrer'>
-                  <div>{elem.link}</div>
-                </a>
+              <Image alt='' src={elem.icons}  width={20} height={20} />
+              <Link href={elem.link} target="_blank" rel="noreferrer">
+                <div>{elem.link}</div>
               </Link>
+
             </div>
           </>
         );

@@ -86,12 +86,12 @@ function Hero(props, headerRef) {
       <div className='title'>
         <div>
           <h1 ref={(ref) => (headerRef.current[0] = ref)} className='heading'>
-            Hi My name is Orji Modestus
+            Hi, I&apos;m Orji Modestus, 
           </h1>
         </div>
         <div>
           <h1 ref={(ref) => (headerRef.current[1] = ref)} className='heading'>
-            Front End Developer.
+            a Software  Engineer.
           </h1>
         </div>
       </div>
