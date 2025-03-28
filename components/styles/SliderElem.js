@@ -4,7 +4,7 @@ export const SliderElem = styled.div`
   grid-column: center-start/center-end;
   position: relative;
   z-index: 677;
-  margin: 20rem 0 10rem 0;
+  margin: 10rem 0;
   color: #DDD1C7;
   @media (max-width: 768px) {
     margin: 6rem 0;
